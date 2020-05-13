@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
   <meta name="description" content=""/>
   <meta name="author" content=""/>
-  <title>Desinfectie team</title>
+  <title>Kroonwerk schoonmaak</title>
 </head>
 <body>
 <div id="layoutDefault">
@@ -14,15 +14,17 @@
     <main>
       <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
         <div class="container">
-          <%= link_to "Preventie schoonmaak", root_path, class: "navbar-brand text-primary" %>
+          <%= link_to "KROONWER SCHOONMAAK", root_path, class: "navbar-brand text-primary" %>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i data-feather="menu"></i>
+            <i class="fas fa-bars"></i>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto mr-lg-5">
-              <li class="nav-item"><a class="nav-link" href="index.html">Home </a></li>
+              <li class="nav-item">
+                <%= link_to "Home", root_path, class: "nav-link" %>
+              </li>
               <li class="nav-item dropdown dropdown-xl no-caret">
-                <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">FAQ</a>
+                <%= link_to "FAQ", faq_path, class: "nav-link", role: "button" %>
               </li>
             </ul>
             <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://shop.startbootstrap.com/sb-ui-kit-pro">Boek
@@ -36,12 +38,14 @@
             <div class="row justify-content-center">
               <div class="col-xl-8 col-lg-10 text-center">
                 <div data-aos="fade-up">
-                  <h1 class="page-header-title">Wij helpen jouw tegen corona preventie en ontsmetting</h1>
-                  <p class="page-header-text">Een schoonmaak plan waarmee u zelf thuis goed kunt schoonmaken</p>
+                  <h1 class="page-header-title">Wij helpen u met coronapreventie en ontsmetting</h1>
+                  <p class="page-header-text">Schoonmaak op maat en preventieprotocollen</p>
                 </div>
-                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">bekijk
-                  het stappenplan
+                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek
+                  nu
                 </button>
+                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">
+                  <a href="#knowmore" id="leesmeer" class="text-white text-decoration-none ">Leer meer</a></button>
               </div>
             </div>
           </div>
@@ -52,7 +56,83 @@
           </svg>
         </div>
       </header>
-      <section class="bg-white py-10">
+      <section class="bg-white py-10" id="knowmore">
+        <div class="container">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-md-9 col-lg-6 order-1 order-lg-0 aos-init aos-animate">
+              <div class="content-skewed content-skewed-right">
+                <div class="card lift" data-aos="fade-up">
+                  <div class="card-body p-2" >
+                    <%= image_tag('covid-monalisa.jpg', style: "width: 100%; object-fit: cover; height: 700px;") %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0 aos-init aos-animate">
+              <div class="mb-5">
+                <h2 class="font-weight-400">COVID-19</h2>
+                <p class="lead">De wereldwijde uitbraak van het nieuwe coronavirus heeft ons dagelijks leven drastisch
+                  veranderd. Ook op de werkvloer. Wat mag nog wel en wat mag niet? Hoe bescherm ik mijn werknemers en
+                  klanten voor nieuwe besmettingen? Kroonwerk helpt u met advies op maat bij al deze vragen.</p>
+              </div>
+              <div class="row" data-aos="fade-right">
+                <div class="col-md-6 mb-4">
+                  <h6 class="font-weight-400">Richtlijnen Rijksoverheid</h6>
+                  <p class="mb-2 small">De Rijksoverheid heeft duidelijke richtlijnen over wat u als ondernemer kan doen
+                    voor de veiligheid van uw klanten en werknemers.</p>
+                  <!--              TODO: Moet nog een link toegevoegd worden -->
+                  <a class="small text-arrow-icon mt-3" href="#">Lees Meer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+                <div class="col-md-6 mb-4">
+                  <h6 class="font-weight-400">Wij bieden u aan</h6>
+                  <p class="mb-2 small mb-0"><strong>Schoonmaak </strong> op maat om uw ruimte te ontsmetten.</p>
+                  <p class="mb-2 small mb-0"><strong>Continue </strong> veiligheid door preventieprotocollen.</p>
+                  <!--              TODO: Moet nog een link toegevoegd worden -->
+                  <a class="small text-arrow-icon mt-2" href="#">Lees Meer
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                      <line x1="5" y1="12" x2="19" y2="12"></line>
+                      <polyline points="12 5 19 12 12 19"></polyline>
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div class="row" data-aos="fade-left">
+                <div class="col-12">
+                  <h6 class="font-weight-400">Schoonmaak op maat</h6>
+                  <p class="mb-2 small mb-0">De richtlijnen voor schoonmaken zijn duidelijk en simpel. U kunt het
+                    gemakkelijk zelf doen. Echter zijn de <strong>risico’s groot</strong> en is
+                    <strong>100% ontsmetting niet te garanderen</strong>. Daarom raden wij aan dat u ons
+                    <strong>boekingsplatform</strong> gebruikt om ervaren schoonmakers in te schakelen.</p>
+                  <div class="row mt-3">
+                    <!--              TODO: Moet nog een link toegevoegd worden -->
+                    <a class="small text-arrow-icon col-md-6 mb-4" href="#">Veelgestelde Vragen
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                    <a class="small text-arrow-icon col-md-6 mb-4" href="#">Offerte Aanvragen?
+                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="svg-border-rounded text-light">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+        </div>
+      </section>
+      <section class="bg-light py-10" data-aos="fade-up">
         <div class="container">
           <div class="row text-center">
             <div class="col-lg-4 mb-5 mb-lg-0">
@@ -98,9 +178,10 @@
         <div class="container position-relative">
           <div class="row justify-content-center">
             <div class="col-lg-10">
-              <div class="display-4 text-center py-10 my-10 text-white">Frequent
+              <div class="display-4 text-center py-10 my-10 text-white" data-aos="fade-up" data-aos-delay="400">Frequent
                 <span class="text-primary">schoonmaken</span> wordt een belangrijk onderdeel van ons dagelijks
-                <span class="text-primary">leven</span>. Met <span class="text-primary">onze service</span> hoeft u zich hier <span class="text-primary">geen zorgen</span> over te maken.
+                <span class="text-primary">leven</span>. Met <span class="text-primary">onze service</span> hoeft u zich
+                hier <span class="text-primary">geen zorgen</span> over te maken.
               </div>
             </div>
           </div>
@@ -111,8 +192,11 @@
           <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8 col-md-10 text-center my-10">
               <h2>Offerte aanvragen?</h2>
-              <p class="lead text-gray-500 mb-5">Wij streven ernaar om u zo goed mogelijk te kunnen helpen in deze zware tijden. Daarom bieden we naast ons gratis schoonmaak stappenplan ook een preventie schoonmaak service.</p>
-              <a class="btn btn-primary btn-marketing rounded-pill" href="#!">nu offerte aanvragen</a>
+              <p class="lead text-gray-500 mb-5">Wij streven ernaar om u zo goed mogelijk te kunnen helpen in deze zware
+                tijden. Daarom bieden we naast ons gratis schoonmaak stappenplan ook een preventie schoonmaak
+                service.</p>
+              <!--              TODO: Moet nog een link toegevoegd worden -->
+              <a class="btn btn-primary btn-marketing rounded-pill" href="#">nu offerte aanvragen</a>
             </div>
           </div>
         </div>
