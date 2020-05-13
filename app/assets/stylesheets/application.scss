@@ -16,13 +16,13 @@
 @import "font-awesome-sprockets";
 @import "font-awesome";
 
-// for live version this set-up
-@import '../../../node_modules/aos/dist/aos.css';
-@import '../../../node_modules/lity/dist/lity.css';
-
-//local version this set-up
-@import 'aos/dist/aos.css';
-@import 'lity/dist/lity.css';
+//// for live version this set-up
+@import 'aos/src/sass/aos.scss';
+//@import 'node_modules/lity/dist/lity.css';
+//
+////local version this set-up
+//@import 'aos/dist/aos.css';
+//@import 'lity/dist/lity.css';
 
 // Your CSS partials
 @import "components/index";
