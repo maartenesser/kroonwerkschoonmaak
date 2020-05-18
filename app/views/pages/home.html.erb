@@ -12,9 +12,10 @@
 <div id="layoutDefault">
   <div id="layoutDefault_content">
     <main>
+      <!-------------------------------     NAV    ------------------------------->
       <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
         <div class="container">
-          <%= link_to "KROONWER SCHOONMAAK", root_path, class: "navbar-brand text-primary" %>
+          <%= link_to "KROONWERK SCHOONMAAK", root_path, class: "navbar-brand text-primary" %>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
           </button>
@@ -27,11 +28,12 @@
                 <%= link_to "FAQ", faq_path, class: "nav-link", role: "button" %>
               </li>
             </ul>
-            <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="https://shop.startbootstrap.com/sb-ui-kit-pro">Boek
+            <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="#">Boek
               Nu<i class="fas fa-arrow-right ml-1"></i></a>
           </div>
         </div>
       </nav>
+      <!-------------------------------     HEADER    ------------------------------->
       <header class="page-header page-header-dark bg-img-cover overlay overlay-80 front-page-background-image">
         <div class="page-header-content py-5">
           <div class="container">
@@ -56,85 +58,70 @@
           </svg>
         </div>
       </header>
+      <!-------------------------------     SECTION 1 PIC LEFT    ------------------------------->
       <section class="bg-white py-10" id="knowmore">
         <div class="container">
           <div class="row align-items-center justify-content-center">
             <div class="col-md-9 col-lg-6 order-1 order-lg-0 aos-init aos-animate">
               <div class="content-skewed content-skewed-right">
                 <div class="card lift" data-aos="fade-up">
-                  <div class="card-body p-2" >
-                    <%= image_tag('covid-monalisa.jpg', style: "width: 100%; object-fit: cover; height: 700px;") %>
+                  <div class="card-body p-2">
+                    <%= image_tag('covid-cleaner.jpeg', style: "width: 100%; object-fit: cover; height: 700px;", alt: "Person wearing protective suit by Matilda Wormwood") %>
                   </div>
                 </div>
               </div>
             </div>
             <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0 aos-init aos-animate">
               <div class="mb-5">
-                <h2 class="font-weight-400">COVID-19</h2>
+                <h2 class="display-4 mb-5">COVID-19</h2>
                 <p class="lead">De wereldwijde uitbraak van het nieuwe coronavirus heeft ons dagelijks leven drastisch
                   veranderd. Ook op de werkvloer. Wat mag nog wel en wat mag niet? Hoe bescherm ik mijn werknemers en
                   klanten voor nieuwe besmettingen? Kroonwerk helpt u met advies op maat bij al deze vragen.</p>
               </div>
-              <div class="row" data-aos="fade-right">
-                <div class="col-md-6 mb-4">
-                  <h6 class="font-weight-400">Richtlijnen Rijksoverheid</h6>
-                  <p class="mb-2 small">De Rijksoverheid heeft duidelijke richtlijnen over wat u als ondernemer kan doen
-                    voor de veiligheid van uw klanten en werknemers.</p>
-                  <!--              TODO: Moet nog een link toegevoegd worden -->
-                  <a class="small text-arrow-icon mt-3" href="#">Lees Meer
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
+              <div class="row d-flex align-items-center ml-4" data-aos="fade-right">
+                <div class="icon-stack icon-stack-xl bg-blue text-white mb-4">
+                  <i class="far fa-file-alt"></i>
                 </div>
-                <div class="col-md-6 mb-4">
-                  <h6 class="font-weight-400">Wij bieden u aan</h6>
-                  <p class="mb-2 small mb-0"><strong>Schoonmaak </strong> op maat om uw ruimte te ontsmetten.</p>
-                  <p class="mb-2 small mb-0"><strong>Continue </strong> veiligheid door preventieprotocollen.</p>
-                  <!--              TODO: Moet nog een link toegevoegd worden -->
-                  <a class="small text-arrow-icon mt-2" href="#">Lees Meer
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                      <line x1="5" y1="12" x2="19" y2="12"></line>
-                      <polyline points="12 5 19 12 12 19"></polyline>
-                    </svg>
-                  </a>
+                <div class="col-10 ">
+                  <p class=""><strong>Richtlijnen</strong> van de Rijksoverheid en andere instanties</p>
                 </div>
-              </div>
-              <div class="row" data-aos="fade-left">
-                <div class="col-12">
-                  <h6 class="font-weight-400">Schoonmaak op maat</h6>
-                  <p class="mb-2 small mb-0">De richtlijnen voor schoonmaken zijn duidelijk en simpel. U kunt het
-                    gemakkelijk zelf doen. Echter zijn de <strong>risico’s groot</strong> en is
-                    <strong>100% ontsmetting niet te garanderen</strong>. Daarom raden wij aan dat u ons
-                    <strong>boekingsplatform</strong> gebruikt om ervaren schoonmakers in te schakelen.</p>
-                  <div class="row mt-3">
-                    <!--              TODO: Moet nog een link toegevoegd worden -->
-                    <a class="small text-arrow-icon col-md-6 mb-4" href="#">Veelgestelde Vragen
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
-                    </a>
-                    <a class="small text-arrow-icon col-md-6 mb-4" href="#">Offerte Aanvragen?
-                      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-right">
-                        <line x1="5" y1="12" x2="19" y2="12"></line>
-                        <polyline points="12 5 19 12 12 19"></polyline>
-                      </svg>
-                    </a>
-                  </div>
+                <div class="icon-stack icon-stack-xl  bg-blue text-white mb-4">
+                  <i class="fas fa-broom"></i>
+                </div>
+                <div class="col-10">
+                  <p><strong>Schoonmaak op maat</strong> via ons state-of-the art boekingsplatform</p>
+                </div>
+                <div class="icon-stack icon-stack-xl  bg-blue text-white mb-4">
+                  <i class="fas fa-list-ul"></i>
+                </div>
+                <div class="col-10">
+                  <p><strong>Continue veiligheid</strong> door middel van preventieprotocollen</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
         <div class="svg-border-rounded text-light">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor"><path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path></svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+          </svg>
         </div>
       </section>
+      <!-------------------------------     SECTION 2 PROPOSITION    ------------------------------->
       <section class="bg-light py-10" data-aos="fade-up">
         <div class="container">
-          <div class="row text-center">
+          <div class="text-center mb-5 pb-5" data-aos="fade-up">
+            <div class="col-12">
+              <h2 class="display-4 mb-5">Schoonmaak op maat</h2>
+              <p class="mb-0">De richtlijnen voor schoonmaken zijn duidelijk en simpel. U kunt het
+                gemakkelijk zelf doen. Echter zijn de <strong class="text-primary">risico’s groot</strong> en is
+                <strong class="text-primary">100% ontsmetting niet te garanderen</strong>. Daarom raden wij aan dat u
+                ons
+                <strong class="text-primary">boekingsplatform</strong> gebruikt om ervaren schoonmakers in te schakelen.
+              </p>
+            </div>
+          </div>
+          <div class="row text-center justify-content-center">
             <div class="col-lg-4 mb-5 mb-lg-0">
               <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
                 <i class="fas fa-question"></i></div>
@@ -153,15 +140,47 @@
               <h2>Professionele schoonmaak</h2>
               <p class="mb-0">Our products are created on time, and to your exact specifications</p>
             </div>
+            <div class="mt-5 pt-5">
+              <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek
+                nu
+              </button>
+            </div>
           </div>
         </div>
-        <div class="svg-border-rounded text-light">
+        <div class="svg-border-rounded text-white">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
             <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
           </svg>
         </div>
       </section>
-      <section class="bg-light py-10">
+      <!-------------------------------     SECTION 3 SAFTY    ------------------------------->
+      <section class="bg-white py-10">
+        <div class="container position-relative">
+          <h2 class="display-4 text-center mb-5">Continue Veiligheid</h2>
+          <div class="row justify-content-center">
+            <div class="col-lg-10">
+              <div class="text-center text-gray" data-aos="fade-up" data-aos-delay="400">
+                U kunt nog een <strong class="text-primary">stapje verder gaan voor uw personeel en klanten</strong> met
+                <strong class="text-primary">preventieprotocollen</strong>. Zo maakt u uw
+                ruimte minder vatbaar voor corona. Naast onze schoonmaakservice kunnen wij u uitleggen hoe u
+                <strong class="text-primary">veiligheid
+                  waarborgt</strong> in uw kantoorruimte.
+              </div>
+              <div class="text-center mt-5">
+                <button class="btn btn-marketing rounded-pill btn-primary m-2" data-aos="fade-up" data-aos-delay="100">Lees
+                  meer
+                </button>
+                <button class="btn btn-marketing rounded-pill btn-primary m-2" data-aos="fade-up" data-aos-delay="100">Boek
+                  nu
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+      <!-------------------------------     SECTION 4 PIC    ------------------------------->
+      <section class="bg-white py-3">
         <div class="container">
           <div class="row justify-content-center z-1">
             <div class="col-lg-8" data-aos="fade-up">
@@ -173,8 +192,14 @@
             </div>
           </div>
         </div>
+        <div class="svg-border-rounded text-black">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+          </svg>
+        </div>
       </section>
-      <section class="bg-img-cover overlay overlay-80 py-10" style='background-image: url("https://images.unsplash.com/photo-1584649042913-819d5b9347ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80")'>
+      <!-------------------------------     SECTION 5 QUOTE    ------------------------------->
+      <section class="bg-img-cover overlay overlay-80 pt-10" style='background-image: url("https://images.unsplash.com/photo-1584649042913-819d5b9347ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1934&q=80")'>
         <div class="container position-relative">
           <div class="row justify-content-center">
             <div class="col-lg-10">
@@ -186,8 +211,14 @@
             </div>
           </div>
         </div>
+        <div class="svg-border-rounded text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
+            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
+          </svg>
+        </div>
       </section>
-      <section class="bg-white py-10">
+      <!-------------------------------     SECTION 6 CALL TO ACTION   ------------------------------->
+      <section class="bg-white py-5">
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-xl-6 col-lg-8 col-md-10 text-center my-10">
@@ -208,6 +239,7 @@
       </section>
     </main>
   </div>
+  <!-------------------------------     FOOTER    ------------------------------->
   <div id="layoutDefault_footer">
     <footer class="footer pt-10 pb-5 mt-auto bg-black footer-dark">
       <div class="container">
