@@ -1,0 +1,11 @@
+<div class="container mx-auto">
+  <%= simple_form_for @interested_user do |f|  %>
+    <%= f.error_notification %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?  %>
+    <%= f.input :first_name, placeholder: "Vul je voornaam in", input_html: { autocomplete: "first_name" } %>
+    <%= f.input :last_name, placeholder: "Vul je achternaam in", input_html: { autocomplete: "last_name" } %>
+    <%= f.input :email, placeholder: "Vul je mail in om op de hogte te blijven", input_html: { autocomplete: "email" } %>
+    <%= f.input :company_kind, collection: ["Kapper", "Nagel Studio", "Sportschool", "Horeca", "Beatysalon", "Speciaalzaak", "Stomerij"], placeholder: "Kies je sector waarin je werkt", input_html: { autocomplete: "email" } %>
+    <%= f.button :submit, "Verstuur", class: "btn btn-primary"  %>
+  <% end %>
+</div>

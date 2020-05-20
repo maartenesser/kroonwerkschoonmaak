@@ -1,41 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-  <meta name="description" content=""/>
-  <meta name="author" content=""/>
-  <title>Kroonwerk schoonmaak</title>
-</head>
-<body>
 <div id="layoutDefault">
   <div id="layoutDefault_content">
     <main>
-      <!-------------------------------     NAV    ------------------------------->
-      <nav class="navbar navbar-marketing navbar-expand-lg bg-white navbar-light">
-        <div class="container">
-          <div class="navbar-brand">
-          <%= image_tag('Kroonwerk-logo.png', style: "object-fit: cover; height: 2rem;") %>
-          </div>
-          <%= link_to "KROONWERK SCHOONMAAK", root_path, class: "navbar-brand text-primary" %>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="fas fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto mr-lg-5">
-              <li class="nav-item">
-                <%= link_to "Home", root_path, class: "nav-link" %>
-              </li>
-              <li class="nav-item dropdown dropdown-xl no-caret">
-                <%= link_to "FAQ", faq_path, class: "nav-link", role: "button" %>
-              </li>
-            </ul>
-            <a class="btn-primary btn rounded-pill px-4 ml-lg-4" href="#">Boek
-              Nu<i class="fas fa-arrow-right ml-1"></i></a>
-          </div>
-        </div>
-      </nav>
       <!-------------------------------     HEADER    ------------------------------->
       <header class="page-header page-header-dark bg-img-cover overlay overlay-80 front-page-background-image">
         <div class="page-header-content py-5">
@@ -46,9 +11,7 @@
                   <h1 class="page-header-title">Wij helpen u met coronapreventie en ontsmetting</h1>
                   <p class="page-header-text">Schoonmaak op maat en preventieprotocollen</p>
                 </div>
-                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek
-                  nu
-                </button>
+                <%= link_to '<button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek nu</button>'.html_safe, new_interested_user_path %>
                 <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">
                   <a href="#knowmore" id="leesmeer" class="text-white text-decoration-none ">Leer meer</a></button>
               </div>
@@ -86,13 +49,15 @@
                   <i class="far fa-file-alt"></i>
                 </div>
                 <div class="col-10">
-                  <p class=""><strong class="text-primary">Richtlijnen</strong> van de Rijksoverheid en andere instanties</p>
+                  <p class=""><strong class="text-primary">Richtlijnen</strong> van de Rijksoverheid en andere
+                    instanties</p>
                 </div>
                 <div class="icon-stack icon-stack-xl bg-blue text-white mb-4 col-2">
                   <i class="fas fa-broom"></i>
                 </div>
                 <div class="col-10">
-                  <p><strong class="text-primary">Schoonmaak op maat</strong> via ons state-of-the art boekingsplatform</p>
+                  <p><strong class="text-primary">Schoonmaak op maat</strong> via ons state-of-the art boekingsplatform
+                  </p>
                 </div>
                 <div class="icon-stack icon-stack-xl bg-blue text-white mb-4 lift col-2">
                   <i class="fas fa-list-ul"></i>
@@ -173,9 +138,7 @@
                 <button class="btn btn-marketing rounded-pill btn-primary m-2 lift" data-aos="fade-up" data-aos-delay="100">Lees
                   meer
                 </button>
-                <button class="btn btn-marketing rounded-pill btn-primary m-2 lift" data-aos="fade-up" data-aos-delay="100">Boek
-                  nu
-                </button>
+                <%= link_to '<button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek nu</button>'.html_safe, new_interested_user_path %>
               </div>
             </div>
 
@@ -284,5 +247,3 @@
     </footer>
   </div>
 </div>
-</body>
-</html>
