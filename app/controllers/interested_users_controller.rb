@@ -21,6 +21,6 @@ class InterestedUsersController < ApplicationController
   end
 
   def form_params
-    params.require(:interested_user).permit(:first_name, :last_name, :email, :company_kind)
+    params.require(:interested_user).permit(:first_name, :last_name, :email, :company_kind, :GDPRCompliance)
   end
 end
