@@ -1,22 +1,26 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Kroonwerk Schoonmaak</title>
-    <%= favicon_link_tag %>
-    <%= csrf_meta_tags %>
-    <%= action_cable_meta_tag %>
-    <%= stylesheet_link_tag 'application', media: 'all' %>
-    <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
-  </head>
-  <body>
-  <%= render 'shared/navbar' %>
-  <%= render 'shared/flashes' %>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Kroonwerk Schoonmaak</title>
+  <%= favicon_link_tag %>
+  <%= csrf_meta_tags %>
+  <%= action_cable_meta_tag %>
+  <%= stylesheet_link_tag 'application', media: 'all' %>
+  <%#= stylesheet_pack_tag 'application', media: 'all' %> <!-- Uncomment if you import CSS in app/javascript/packs/application.js -->
+</head>
+<body>
+<div id="layoutDefault">
+  <div id="layoutDefault_content">
+    <%= render 'shared/navbar' %>
+    <%= render 'shared/flashes' %>
 
 
-  <%= yield %>
+    <%= yield %>
 
     <%= javascript_pack_tag 'application' %>
-  </body>
+  </div>
+</div>
+</body>
 </html>
