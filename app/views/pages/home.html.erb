@@ -11,9 +11,10 @@
                   <h1 class="page-header-title">Wij helpen u met coronapreventie en ontsmetting</h1>
                   <p class="page-header-text">Schoonmaak op maat en preventieprotocollen</p>
                 </div>
-                <%= link_to '<button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek nu</button>'.html_safe, new_interested_user_path %>
-                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">
-                  <a href="#knowmore" id="leesmeer" class="text-white text-decoration-none ">Leer meer</a></button>
+                <%= link_to "BOEK NU", new_interested_user_path, class: "btn-primary btn rounded-pill px-4 ml-lg-4", 'data-aos': "fade-up", 'data-aos-delay': "100"%>
+<!--                <button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">-->
+                  <a href="#knowmore" id="leesmeer" class="text-white text-decoration-none btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">LEES MEER</a>
+<!--                </button>-->
               </div>
             </div>
           </div>
@@ -32,7 +33,7 @@
               <div class="content-skewed content-skewed-right">
                 <div class="card lift" data-aos="fade-up">
                   <div class="card-body p-2">
-                    <%= image_tag('covid-cleaner.jpg', style: "width: 100%; object-fit: cover; height: 700px;", alt: "Person wearing protective suit by Matilda Wormwood") %>
+                    <%= image_tag('covid-cleaner.jpg', style: "width: 100%; object-fit: cover; height: auto;", alt: "Person wearing protective suit by Matilda Wormwood") %>
                   </div>
                 </div>
               </div>
@@ -40,7 +41,7 @@
             <div class="col-lg-6 order-0 order-lg-1 mb-5 mb-lg-0 aos-init aos-animate">
               <div class="mb-5" data-aos="fade-up">
                 <h2 class="display-4 mb-5">COVID-19</h2>
-                <p class="lead">De wereldwijde uitbraak van het nieuwe coronavirus heeft ons dagelijks leven drastisch
+                <p class="lead font-weight-light" style="font-size: larger">De wereldwijde uitbraak van het nieuwe coronavirus heeft ons dagelijks leven drastisch
                   veranderd. Ook op de werkvloer. Wat mag nog wel en wat mag niet? Hoe bescherm ik mijn werknemers en
                   klanten voor nieuwe besmettingen? Kroonwerk helpt u met advies op maat bij al deze vragen.</p>
               </div>
@@ -81,7 +82,7 @@
           <div class="text-center mb-5 pb-5" data-aos="fade-up">
             <div class="col-12">
               <h2 class="display-4 mb-5">Schoonmaak op maat</h2>
-              <p class="mb-0">De richtlijnen voor schoonmaken zijn duidelijk en simpel. U kunt het
+              <p class="mb-0 font-weight-light" style="font-size: larger">De richtlijnen voor schoonmaken zijn duidelijk en simpel. U kunt het
                 gemakkelijk zelf doen. Echter zijn de <span class="text-primary">risico’s groot</span> en is
                 <span class="text-primary">100% ontsmetting niet te garanderen</span>. Daarom raden wij aan dat u
                 ons
@@ -106,12 +107,10 @@
               <div class="icon-stack icon-stack-xl bg-gradient-primary-to-secondary text-white mb-4">
                 <i class="fas fa-broom"></i></div>
               <h2>Professionele schoonmaak</h2>
-              <p class="mb-0">Our products are created on time, and to your exact specifications</p>
+              <p class="mb-0">Via ons platform kiest u een tijdstip voor professionele shcoonmaak</p>
             </div>
             <div class="mt-5 pt-5">
-              <button class="btn btn-marketing rounded-pill btn-primary lift" data-aos="fade-up" data-aos-delay="100">Boek
-                nu
-              </button>
+              <%= link_to "BOEK NU", new_interested_user_path, class: "btn-primary btn rounded-pill px-4 ml-lg-4", 'data-aos': "fade-up", 'data-aos-delay': "100"%>
             </div>
           </div>
         </div>
@@ -124,21 +123,19 @@
       <!-------------------------------     SECTION 3 SAFTY    ------------------------------->
       <section class="bg-white py-10">
         <div class="container position-relative">
-          <h2 class="display-4 text-center mb-5">Continue Veiligheid</h2>
+          <h2 class="display-4 text-center mb-5">Moeiteloos tegen corona beschermd</h2>
           <div class="row justify-content-center">
             <div class="col-lg-10">
               <div class="text-center text-gray" data-aos="fade-up" data-aos-delay="400">
-                U kunt nog een <span class="text-primary">stapje verder gaan voor uw personeel en klanten</span> met
-                <span class="text-primary">preventieprotocollen</span>. Zo maakt u uw
-                ruimte minder vatbaar voor corona. Naast onze schoonmaakservice kunnen wij u uitleggen hoe u
-                <span class="text-primary">veiligheid
-                  waarborgt</span> in uw kantoorruimte.
+                <p class="font-weight-light" style="font-size: larger"> U kunt uw ruimte zo <span class="text-primary">inrichten</span> dat <span class="text-primary">omzet</span> en <span class="text-primary"> veiligheid maximaal</span> zijn. Denkt u hierbij aan het
+                <span class="text-primary">identificeren van hotspots</span>, of aan het <span class="text-primary">herinrichten naar 1,5-meter richtlijnen</span>. Na een <span class="text-primary">consult</span> leggen
+                wij uit hoe u dit moet doen en hoe <span class="text-primary">dit moeiteloos in stand te houden</span>.
+                </p>
               </div>
               <div class="text-center mt-5">
-                <button class="btn btn-marketing rounded-pill btn-primary m-2 lift" data-aos="fade-up" data-aos-delay="100">Lees
-                  meer
+                <button class="btn rounded-pill btn-primary m-2 lift" data-aos="fade-up" data-aos-delay="100">LEES MEER
                 </button>
-                <%= link_to '<button class="btn btn-marketing rounded-pill btn-primary" data-aos="fade-up" data-aos-delay="100">Boek nu</button>'.html_safe, new_interested_user_path %>
+                <%= link_to "BOEK NU", new_interested_user_path, class: "btn-primary btn rounded-pill px-4 ml-lg-4", 'data-aos': "fade-up", 'data-aos-delay': "100"%>
               </div>
             </div>
 
@@ -174,26 +171,6 @@
                 <span class="text-primary">leven</span>. Met <span class="text-primary">onze service</span> hoeft u zich
                 hier <span class="text-primary">geen zorgen</span> over te maken.
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="svg-border-rounded text-white">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144.54 17.34" preserveAspectRatio="none" fill="currentColor">
-            <path d="M144.54,17.34H0V0H144.54ZM0,0S32.36,17.34,72.27,17.34,144.54,0,144.54,0"></path>
-          </svg>
-        </div>
-      </section>
-      <!-------------------------------     SECTION 6 CALL TO ACTION   ------------------------------->
-      <section class="bg-white py-5">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-xl-6 col-lg-8 col-md-10 text-center my-10">
-              <h2>Offerte aanvragen?</h2>
-              <p class="lead text-gray-500 mb-5">Wij streven ernaar om u zo goed mogelijk te kunnen helpen in deze zware
-                tijden. Daarom bieden we naast ons gratis schoonmaak stappenplan ook een preventie schoonmaak
-                service.</p>
-              <!--              TODO: Moet nog een link toegevoegd worden -->
-              <a class="btn btn-primary btn-marketing rounded-pill lift" href="#">nu offerte aanvragen</a>
             </div>
           </div>
         </div>
