@@ -5,4 +5,6 @@ class PagesController < ApplicationController
   def faq
   end
 
+  def calendly
+  end
 end
