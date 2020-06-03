@@ -5,7 +5,7 @@
         <%= image_tag('Kroonwerk-logo.png', style: "object-fit: cover; height: 2rem;") %>
       <% end %>
     </div>
-    <%= link_to "KROONWERK SCHOONMAAK", root_path, class: "navbar-brand text-primary mt-1" %>
+    <%= link_to "KROONWERK", root_path, class: "navbar-brand text-primary mt-1" %>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <i class="fas fa-bars"></i>
     </button>
@@ -16,6 +16,9 @@
         </li>
         <li class="nav-item dropdown dropdown-xl no-caret">
           <%= link_to "FAQ", faq_path, class: "nav-link", role: "button" %>
+        </li>
+        <li class="nav-item dropdown dropdown-xl no-caret">
+          <%= link_to "Calendly", calendly_path, class: "nav-link", role: "button" %>
         </li>
       </ul>
       <%= link_to '<button class="btn-primary btn rounded-pill px-4 ml-lg-4">Boek

@@ -1,12 +1,12 @@
 <div class="container mx-auto">
-  <%= simple_form_for @interested_user, class:'form-group' do |f|  %>
+  <%= simple_form_for @interested_user, class: 'form-group' do |f| %>
     <%= f.error_notification %>
-    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present?  %>
-    <%= f.input :first_name, label: "Voornaam", input_html: { autocomplete: "frist_name" } %>
-    <%= f.input :last_name, label:"Achternaam", input_html: { autocomplete: "last_name" } %>
-    <%= f.input :email, input_html: { autocomplete: "email" } %>
-    <%= f.input :company_kind, label:"Wat voor bedrijf heeft u?", collection: ["Kapperzaal", "Nagel Studio", "Sportschool", "Horeca", "Bautysalon", "Speciaalzaak", "Stomerij"], placeholder: "Kies je sector waarin je werkt", input_html: { autocomplete: "email" } %>
-    <%= f.input :GDPRCompliance, label:"Hiermee accepteer ik de AVG-naleving", as: :boolean %>
-    <%= f.button :submit, "Verstuur", class: "btn btn-primary"  %>
+    <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+    <%= f.input :first_name, label: "Voornaam", input_html: {autocomplete: "frist_name"} %>
+    <%= f.input :last_name, label: "Achternaam", input_html: {autocomplete: "last_name"} %>
+    <%= f.input :email, input_html: {autocomplete: "email"} %>
+    <%= f.input :company_kind, label: "Wat voor bedrijf heeft u?", collection: ["Kapperzaal", "Nagel Studio", "Sportschool", "Horeca", "Bautysalon", "Speciaalzaak", "Stomerij"], placeholder: "Kies je sector waarin je werkt", input_html: {autocomplete: "email"} %>
+    <%= f.input :GDPRCompliance, label: "Hiermee accepteer ik de AVG-naleving", as: :boolean %>
+    <%= f.button :submit, "Verstuur", class: "btn btn-primary" %>
   <% end %>
 </div>
