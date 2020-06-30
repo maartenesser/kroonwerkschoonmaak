@@ -1,1 +1,1 @@
-This was a website that was created to help small entreperneurs against the corona regulations in the Netherlands.
+This is a website that was created to help small entreperneurs against the corona regulations in the Netherlands.
